@@ -1,8 +1,14 @@
 //global variables
+int appWidth, appHeight
+boolean windowActivated = false;
+void setup () {
+size (500,800);
+appWidth = height;
+appHeight = width;
+} 
 //
-void setup () {} 
-//
-void draw () {} 
+void draw () {
+void lol } 
 //
 void mousePressed() {}
 //
