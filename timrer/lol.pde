@@ -1,3 +1,3 @@
-void lol {
+void lol () {
 
 }
