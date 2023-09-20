@@ -1,9 +1,52 @@
+Square[] squares = new
+Square[2];
 void setup (){
 size (500, 800);
-appWidth = height;
-appHeight = width;
+population();
+ for (int i = 0; i < squares.length; i++) {
+ float x = i * 60;
+ float y = appHeight /2;
+ float size = appWidth * 1/5;
+ squares[i] = new Square(x,y,size);
+ }
 }
 void draw () {
+lol();
+ for ( int i = 0; i < squares.length; i++) {
+   for ( int j=1; j<=numPadRow; j+=2 ) { 
+      x[i] = widthSquare*j/2;
+ squares[1].display();
+
+ }
+}
+ class Square {
+   float x, y;
+   float size;
+   
+   Square(float x,
+   float y, float size) {
+         this.x = x;
+         this.y = y;
+         this. size = size;
+   }
+   
+   void display() {
+     rectMode(CENTER);
+     rect(x,y, size, size);
+   }
+ }
+/*
+for (int i=0; i<numPadColumns; i++ ) { // i stops for x not y
+    for ( int j=1; j<=numPadRow; j+=2 ) { //j=j+2
+      x[i] = squareButtonW*j/2;
+      println("Inside x", x[i] );
+        printArray(x);
+
+    }
+  }
+*/
+
+/*
 rect(leftI,topY,NumberButtonSizeY, NumberButtonSizeX);
 rect(leftI,middleIY,NumberButtonSizeY, NumberButtonSizeX);
 rect(leftI,middleIIY,NumberButtonSizeY, NumberButtonSizeX);
@@ -16,12 +59,15 @@ rect(rightI,topY,NumberButtonSizeY, NumberButtonSizeX);
 rect(rightI,middleIY,NumberButtonSizeY, NumberButtonSizeX);
 rect(rightI,middleIIY,NumberButtonSizeY, NumberButtonSizeX);
 rect(rightI,bottomY,NumberButtonSizeY, NumberButtonSizeX);
-lol();
-population();
-}
+*/
+
+
+
 void mousePressed () {
-if ( mouseX>leftI+appHeight && mouseX<leftI+appHeight && mouseY>topY+appWidth && mouseY<topY+appWidth) println("1");
+
 }
+/* if ( mouseX>leftI && mouseX<leftI+appWidth && mouseY>topY && mouseY<topY+appWidth) println("1"); */
+
 void keyPressed () {
 
 }
