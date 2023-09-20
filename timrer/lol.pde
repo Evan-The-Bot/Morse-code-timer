@@ -1,3 +1,3 @@
 void lol () {
-background (#23E7F7);
+background (#06CBB9);
 }
