@@ -1,10 +1,4 @@
 void population() {
-appWidth = width;
-appHeight = height;
-centerX = appHeight * 1/2;
-centerY = appWidth * 1/2;
-squareButtonW = appWidth * 1/5;
-squareButtonH = squareButtonW;
 }
 /*
 topY = appWidth * 125/500;
