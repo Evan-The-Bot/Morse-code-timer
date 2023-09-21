@@ -10,26 +10,28 @@ for (int i=0; i<numPadColumns; i++ ) {
 x[i] = squareButtonW*(2*i+2)/2;
 println("Inside x", x[i] );
 }
- fill(#F29B18);
+
 for (int j=0; j<numPadRow-1; j++ ) {
   y[j] = squareButtonW*(2*j+2)/2;
 println("Inside y", y[j] );
 }
 }
 void draw () {
+
+   fill(#F29B18);
 lol();
 for (int i=0; i<numPadColumns; i++ ) {
 for (int j=0; j<numPadRow-1; j++ ) {
     rect( x[i], y[j], squareButtonW, squareButtonH); 
     }
   }
-}
 
+}
 void mousePressed () {
 for (int i=0; i<1 ; i++) 
 for (int j=0; j<1 ; j++) {
-    if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) println("Button #:", i+1);
-    
+    if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH )   fill(#5A2E05);
+rect( 170,20,275,50); rect( 50,50,500,50); fill(#F29B18); println("Button #:", i+1);
     if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) println("Button #:", i+2);
     if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) println("Button #:", i+3);
     if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j+1] && mouseY<y[j+1]+squareButtonH ) println("Button #:", i+4);
