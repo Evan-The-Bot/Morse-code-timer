@@ -7,47 +7,42 @@ centerY = appWidth * 1/2;
 squareButtonW = appWidth * 1/5;
 squareButtonH = squareButtonW;
 for (int i=0; i<numPadColumns; i++ ) {
-x[i] = squareButtonW*(2*i+1)/2;
+x[i] = squareButtonW*(2*i+2)/2;
 println("Inside x", x[i] );
 }
-
+ fill(#F29B18);
 for (int j=0; j<numPadRow-1; j++ ) {
-  y[j] = squareButtonW*(2*j+5)/2;
+  y[j] = squareButtonW*(2*j+2)/2;
 println("Inside y", y[j] );
 }
 }
 void draw () {
-population();
 lol();
 for (int i=0; i<numPadColumns; i++ ) {
-for (int j=0; j<numPadRow; j++ ) {
-    rect( x[i], y[j], squareButtonW, squareButtonH);
+for (int j=0; j<numPadRow-1; j++ ) {
+    rect( x[i], y[j], squareButtonW, squareButtonH); 
     }
   }
 }
-/*
-rect(leftI,topY,NumberButtonSizeY, NumberButtonSizeX);
-rect(leftI,middleIY,NumberButtonSizeY, NumberButtonSizeX);
-rect(leftI,middleIIY,NumberButtonSizeY, NumberButtonSizeX);
-rect(leftI,bottomY,NumberButtonSizeY, NumberButtonSizeX);
-rect(middleI,topY,NumberButtonSizeY, NumberButtonSizeX);
-rect(middleI,middleIY,NumberButtonSizeY, NumberButtonSizeX);
-rect(middleI,middleIIY,NumberButtonSizeY, NumberButtonSizeX);
-rect(middleI,bottomY,NumberButtonSizeY, NumberButtonSizeX);
-rect(rightI,topY,NumberButtonSizeY, NumberButtonSizeX);
-rect(rightI,middleIY,NumberButtonSizeY, NumberButtonSizeX);
-rect(rightI,middleIIY,NumberButtonSizeY, NumberButtonSizeX);
-rect(rightI,bottomY,NumberButtonSizeY, NumberButtonSizeX);
-*/
-
-
 
 void mousePressed () {
-
+for (int i=0; i<1 ; i++) 
+for (int j=0; j<1 ; j++) {
+    if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) println("Button #:", i+1);
+    
+    if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) println("Button #:", i+2);
+    if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) println("Button #:", i+3);
+    if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j+1] && mouseY<y[j+1]+squareButtonH ) println("Button #:", i+4);
+    if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j+1] && mouseY<y[j+1]+squareButtonH ) println("Button #:", i+5);
+    if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j+1] && mouseY<y[j+1]+squareButtonH ) println("Button #:", i+6);
+    if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j+2] && mouseY<y[j+2]+squareButtonH ) println("Button #:", i+7);
+    if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j+2] && mouseY<y[j+2]+squareButtonH ) println("Button #:", i+8);
+    if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j+2] && mouseY<y[j+2]+squareButtonH ) println("Button #:", i+9);
+    if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j+3] && mouseY<y[j+3]+squareButtonH ) println("Button #:", i+10);
+    if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j+3] && mouseY<y[j+3]+squareButtonH ) println("Button #:", i+11);
+    if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j+3] && mouseY<y[j+3]+squareButtonH ) println("Button #:", i+12);
+    }
 }
-
-/* if ( mouseX>leftI && mouseX<leftI+appWidth && mouseY>topY && mouseY<topY+appWidth) println("1"); */
-
 void keyPressed () {
 
 }
