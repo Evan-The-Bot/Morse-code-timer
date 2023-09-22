@@ -19,7 +19,7 @@ void setup () {
 void draw () {
   //
   lol();
-  //
+//
   if (colorfill) {
     noStroke();
     fill(#5A0923);
@@ -52,6 +52,8 @@ void mousePressed () {
         println("Button #:", i+1);
       }
       if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) {
+        colorfill = false;
+        stroke(0);
         println("Button #:", i+2);
       }
       if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) {
@@ -88,3 +90,6 @@ void mousePressed () {
 }
 void keyPressed () {
 }
+/*
+String lol = "lol";
+if(lol.equals("'")){println(lol);}
