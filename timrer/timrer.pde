@@ -1,25 +1,12 @@
 void setup () {
   size (600, 800);
-  appHeight = height;
-  appWidth = width;
-  centerX = appHeight * 1/2;
-  centerY = appWidth * 1/2;
-  squareButtonW = appWidth * 1/5;
-  squareButtonH = squareButtonW;
-  for (int i=0; i<numPadColumns; i++ ) {
-    x[i] = squareButtonW*(2*i+2)/2;
-    println("Inside x", x[i] );
-  }
-
-  for (int j=0; j<numPadRow-1; j++ ) {
-    y[j] = squareButtonW*(2*j+3)/2;
-    println("Inside y", y[j] );
-  }
+  Text();
+  Pop();/
 }
 void draw () {
-  //
-  lol();
-//
+  background (#06CBB9);
+  fill(#F29B18);
+  
   if (colorfill) {
     noStroke();
     fill(#5A0923);
@@ -38,15 +25,24 @@ void draw () {
     rect(145, 113, 15, 15);
     fill(#F29B18);
   }
+  //
+  //
+  //
   for (int i=0; i<numPadColumns; i++ ) {
     for (int j=0; j<numPadRow-1; j++ ) {
-      rect( x[i], y[j], squareButtonW, squareButtonH);
+      rect( x[i], y[j], squareButtonW, squareButtonH );
     }
   }
+  //
+  //
+  //
 }
 void mousePressed () {
+  //
   for (int i=0; i<1; i++)
+  //
     for (int j=0; j<1; j++) {
+      //
       if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j] && mouseY<y[j]+squareButtonH ) {
         colorfill = true;
         println("Button #:", i+1);
@@ -92,4 +88,5 @@ void keyPressed () {
 }
 /*
 String lol = "lol";
-if(lol.equals("'")){println(lol);}
+if(lol.equals("'")){println(lol);
+*/
