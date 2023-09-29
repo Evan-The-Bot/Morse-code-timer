@@ -1,42 +1,38 @@
 void setup () {
   size (600, 800);
-  Text();
-  Pop();/
-}
-void draw () {
-  background (#06CBB9);
-  fill(#F29B18);
-  
-  if (colorfill) {
-    noStroke();
-    fill(#5A0923);
-    rect(75, 50, 450, 25);
-    rect(150, 10, 300, 50);
-    fill(#000000);
-    rect(150, 35, 300, 15);
-    fill(#FFFFFF);
-    rect(370, 90, 125, 75);
-    rect(100, 90, 125, 75);
-    fill(#3E2109);
-    rect(390, 100, 75, 50);
-    rect(130, 100, 75, 50);
-    fill(225);
-    rect(405, 113, 15, 15);
-    rect(145, 113, 15, 15);
-    fill(#F29B18);
+  appWidth = height;
+  appHeight = width;
+  squareButtonW = width * 1/5;
+    squareButtonW = squareButtonH = appHeight*1/8;
+    border = appWidth - ( squareButtonW*1/2 + squareButtonW*3 + squareButtonW*1/2 );
+    border = border*1/2;
+    if ( squareButtonW*8 <= appHeight ) {
+    println("true");
+      } else {
+    println("false");
+    for ( int i=0; i<numPadRows; i++ ) {
+    if ( i<numPadColumns ) x[i] = writeCoordinate(i, 1);
+    y[i] = writeCoordinate(i, 5);
   }
-  //
-  //
-  //
+}
+float writeCoordinate (int i, int oddStart) {
+  return border + ( squareButtonW*(2*i+oddStart)/2 );
+}
+}
+void draw() {
+  for ( int i=0; i<numPadColumns; i++ ) {
+    for ( int j=0; j<numPadRows-1; j++ ) {
+      rect(x[i], y[j], squareButtonW, squareButtonH);
+    } 
+  }
+ 
   for (int i=0; i<numPadColumns; i++ ) {
-    for (int j=0; j<numPadRow-1; j++ ) {
+    for (int j=0; j<numPadRows-1; j++ ) {
       rect( x[i], y[j], squareButtonW, squareButtonH );
     }
   }
-  //
-  //
-  //
 }
+
 void mousePressed () {
   //
   for (int i=0; i<1; i++)
@@ -86,7 +82,3 @@ void mousePressed () {
 }
 void keyPressed () {
 }
-/*
-String lol = "lol";
-if(lol.equals("'")){println(lol);
-*/
