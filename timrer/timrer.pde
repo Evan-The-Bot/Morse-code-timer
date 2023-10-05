@@ -1,5 +1,5 @@
 void setup () {
-   img = loadImage("download.png");
+  img = loadImage("download.png");
   background (#06CBB9);
   fill(#F29B18);
   size (600, 800);
@@ -21,10 +21,10 @@ void draw() {
     }
   }
 }
+
 void mousePressed () {
   ButttonStufff ();
 }
 void keyPressed () {
   ButtonStuff ();
- 
 }

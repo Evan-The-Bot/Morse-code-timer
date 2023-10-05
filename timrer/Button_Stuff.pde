@@ -18,6 +18,12 @@ void ButtonStuff () {
     fill(#F29B18);
   }
   if (Two) {
-        image(img, 0, 0, width, height);
+    image(img, 0, 0, width, height);
+  } else {
+    fill(#06CBB9);
+    rect(0, 0, width, height);
+  }
+  if (Stop) {
+    exit();
   }
 }
