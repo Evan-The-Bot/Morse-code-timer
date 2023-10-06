@@ -1,5 +1,5 @@
 void setup () {
-  img = loadImage("download.png");
+  img = loadImage("Screenshot_20230718-210336.png");
   background (#06CBB9);
   fill(#F29B18);
   size (600, 800);
@@ -17,14 +17,15 @@ void setup () {
 void draw() {
   for ( int i=0; i<numPadColumns; i++ ) {
     for ( int j=0; j<numPadRows-1; j++ ) {
-      image(img, x[i], y[j], squareButtonW, squareButtonH);
+      rect( x[i], y[j], squareButtonW, squareButtonH);
     }
   }
 }
 
 void mousePressed () {
   ButttonStufff ();
+    ButtonStuff ();
 }
 void keyPressed () {
-  ButtonStuff ();
+
 }

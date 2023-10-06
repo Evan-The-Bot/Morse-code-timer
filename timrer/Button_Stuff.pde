@@ -1,5 +1,5 @@
 void ButtonStuff () {
-  if (One) {
+  if (Two) {
     noStroke();
     fill(#5A0923);
     rect(75, 50, 450, 25);
@@ -17,11 +17,7 @@ void ButtonStuff () {
     rect(145, 113, 15, 15);
     fill(#F29B18);
   }
-  if (Two) {
-    image(img, 0, 0, width, height);
-  } else {
-    fill(#06CBB9);
-    rect(0, 0, width, height);
+  if (Start) {
   }
   if (Stop) {
     exit();
