@@ -16,6 +16,7 @@ void ButtonStuff () {
     rect(405, 113, 15, 15);
     rect(145, 113, 15, 15);
     fill(#F29B18);
+    image(img, 0, 650);
   }
   if (Start) {
   }

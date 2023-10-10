@@ -1,8 +1,9 @@
 void setup () {
-  img = loadImage("Screenshot_20230718-210336.png");
+  img = loadImage("download.png");
   background (#06CBB9);
   fill(#F29B18);
   size (600, 800);
+  enteredTimeSeconds = 13;
   appWidth = height;
   appHeight = width;
   squareButtonW = width * 1/5;
@@ -12,9 +13,11 @@ void setup () {
   }
   for (int j=0; j<numPadRows-1; j++ ) {
     y[j] = squareButtonW*(2*j+3)/2;
+    
   }
 }
 void draw() {
+  
   for ( int i=0; i<numPadColumns; i++ ) {
     for ( int j=0; j<numPadRows-1; j++ ) {
       rect( x[i], y[j], squareButtonW, squareButtonH);
