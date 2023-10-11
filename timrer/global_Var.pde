@@ -1,5 +1,5 @@
 int appWidth, appHeight, centerX, centerY;
-int timerStart, enteredTimeSeconds;
+int timerStart, enteredTimeSeconds, enteredTimeMilliSeconds, currentTime, countingTime;
 int numPadColumns = 3, numPadRows = 5;
 float squareButtonW, squareButtonH;
 float[] x = new float [numPadColumns];
