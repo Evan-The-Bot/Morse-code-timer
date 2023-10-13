@@ -3,7 +3,7 @@ void setup () {
   background (#06CBB9);
   fill(#F29B18);
   size (600, 800);
-  enteredTimeSeconds = 13;
+  enteredTimeSeconds = 30;
   enteredTimeMilliSeconds = enteredTimeSeconds * 1000;
   appWidth = height;
   appHeight = width;
