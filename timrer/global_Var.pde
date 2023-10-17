@@ -5,5 +5,5 @@ float squareButtonW, squareButtonH;
 float[] x = new float [numPadColumns];
 float[] y = new float [numPadRows];
 float border=0.0;
-boolean One = false, Two = false, Three = false, Four = false, Five = false, Six = false, Seven = false, Eight = false, Nine = false, Start = false, Stop = false, Zero = false;
+boolean One = false, Two = false, Three = false, Four = false, Five = false, Six = false, Seven = false, Eight = false, Nine = false, Start = false, Stop = false, Zero = false, Parry = false;
 PImage img;

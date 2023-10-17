@@ -19,20 +19,13 @@ void setup () {
 }
 void draw() {
   timerr ();
-  for ( int i=0; i<numPadColumns; i++ ) {
-    for ( int j=0; j<numPadRows-1; j++ ) {
-      rectMode(CORNER);
-      rect( x[i], y[j], squareButtonW, squareButtonH);
-      textAlign(CENTER);
-      text("text", x[i], y[i]);
-    }
-  }
-    Text ();
+  Text ();
 }
 
 void mousePressed () {
   ButttonStufff ();
   ButtonStuff ();
+  Perry ();
 }
 void keyPressed () {
 }
