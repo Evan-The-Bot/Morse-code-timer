@@ -45,10 +45,12 @@ void ButttonStufff () {
       }
       if ( mouseX>x[i+1] && mouseX<x[i+1]+squareButtonW && mouseY>y[j+3] && mouseY<y[j+3]+squareButtonH ) {
          Zero = true;
+         Parry = true;
         println("Button #:", i+11);
       }
       if ( mouseX>x[i+2] && mouseX<x[i+2]+squareButtonW && mouseY>y[j+3] && mouseY<y[j+3]+squareButtonH ) {
         Stop = true; 
+        
         println("Button #:", i+12);
       }
     }

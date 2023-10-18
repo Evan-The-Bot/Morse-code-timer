@@ -1,5 +1,5 @@
 void Perry () {
-  if (Parry)
+  if (Parry) {
     noStroke();
     fill(#5A0923);
     rect(75, 50, 450, 25);
@@ -16,5 +16,5 @@ void Perry () {
     rect(405, 113, 15, 15);
     rect(145, 113, 15, 15);
     fill(#F29B18);
-    image(img, 0, 650);
+  }
 }

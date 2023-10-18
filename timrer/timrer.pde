@@ -25,7 +25,6 @@ void draw() {
 void mousePressed () {
   ButttonStufff ();
   ButtonStuff ();
-  Perry ();
 }
 void keyPressed () {
 }
