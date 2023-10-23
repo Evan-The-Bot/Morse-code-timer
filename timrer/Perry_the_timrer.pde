@@ -1,4 +1,11 @@
 void Perry () {
+    if (!Parry) {
+    fill(#06CBB9);
+    noStroke();
+    rect(75, 10, 450, 160);
+    fill(#F29B18);
+     stroke(1);
+  }
   if (Parry) {
     noStroke();
     fill(#5A0923);
@@ -16,5 +23,5 @@ void Perry () {
     rect(405, 113, 15, 15);
     rect(145, 113, 15, 15);
     fill(#F29B18);
-  }
+  } 
 }

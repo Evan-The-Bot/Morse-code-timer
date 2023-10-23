@@ -7,8 +7,11 @@ void Text () {
     }
   }
   fill(255);
-    if (Parry) {
+     if (Parry) {
     fill(#F29B18);
+  }
+   if (!Parry) {
+    fill(#FFFFFF);
   }
   textSize(69);
   text("1", squareButtonW*3/2, squareButtonH*65/30);
@@ -21,5 +24,5 @@ void Text () {
   text("6", squareButtonW*7/2, squareButtonH*94/30);
   text("9", squareButtonW*7/2, squareButtonH*124/30);
   fill(#F29B18);
-    Perry ();
+  Perry ();
 }

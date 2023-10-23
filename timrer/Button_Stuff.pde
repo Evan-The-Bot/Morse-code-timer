@@ -1,7 +1,6 @@
 void ButtonStuff () {
-  if (Two) {
-  }
   if (Start) {
+    Parry = false;
   }
   if (Stop) {
     exit();
