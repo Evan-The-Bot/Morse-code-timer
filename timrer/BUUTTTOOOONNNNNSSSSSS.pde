@@ -4,16 +4,21 @@ void buttons () {
     x[i] = squareButtonW*(2*i+2)/2;
     for (int j=0; j<numPadRows-1; j++ ) {
       y[j] = squareButtonW*(2*j+4)/2;
-      rect( x[i], y[j], squareButtonW, squareButtonH,15);
+      rect( x[i], y[j], squareButtonW, squareButtonH);
       rectMode(CORNER);
     }
   }
   // Draws the text in each Rectangle
-  fill(255);
+  if (Parry) {
+    fill(#F29B18);
+  }
+  if (!Parry) {
+    fill(255);
+  }
   noStroke();
   rectMode(CENTER);
-  triangle(202, 657, 158, 682, 158, 632);
-  rect(squareButtonW*7/2, squareButtonH*165/30, 50,50);
+  triangle(204, 657, 160, 682, 160, 632);
+  rect(squareButtonW*7/2, squareButtonH*165/30, 50, 50);
   rectMode(CORNER);
   stroke(1);
   textSize(69);

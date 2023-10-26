@@ -55,6 +55,7 @@ void ButttonStufff () {
       }
       if ( mouseX>x[i] && mouseX<x[i]+squareButtonW && mouseY>y[j+3] && mouseY<y[j+3]+squareButtonH ) {
         Start = true;
+        Parry = true;
       } else {
         Start = false;
       }

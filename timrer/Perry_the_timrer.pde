@@ -1,12 +1,5 @@
 void Perry () {
-  //makes mumbers orange with background
-  if (Parry) {
-    fill(#F29B18);
-  }
-  if (!Parry) {
-    fill(#FFFFFF);
-  }
-  //
+  // deletes perrys hat and eyes
   if (!Parry) {
     fill(#06CBB9);
     noStroke();
