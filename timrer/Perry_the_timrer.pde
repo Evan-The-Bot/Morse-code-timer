@@ -25,4 +25,7 @@ void Perry () {
     rect(145, 113, 15, 15);
     fill(#F29B18);
   }
+  if ( mouseX>0 && mouseX<width && mouseY>0 && mouseY<height ) {
+    Parry = false;
+  }
 }

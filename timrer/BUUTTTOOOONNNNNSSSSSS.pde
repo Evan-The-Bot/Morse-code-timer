@@ -11,8 +11,7 @@ void buttons () {
   // Draws the text in each Rectangle
   if (Parry) {
     fill(#F29B18);
-  }
-  if (!Parry) {
+  } else {
     fill(255);
   }
   noStroke();

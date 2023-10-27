@@ -1,5 +1,5 @@
 void BooleanStuff () {
-  //Booleans for 
+  //Booleans for
   if (One) {
     println("Button #: 1");
   }
